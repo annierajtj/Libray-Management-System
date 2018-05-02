@@ -1,0 +1,304 @@
+body {
+    font-family:Roboto,serif;
+    margin: 0;
+}
+
+i {
+    color: #45b39e;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none
+}
+
+#pre_header {
+    margin: 0;
+    background-color: #4a4a4a;
+}
+
+#pre_header ul {
+    color: white;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+#pre_header i {
+    font-size: 24px;
+    padding: 5px;
+}
+
+#pre_header li {
+    display: inline-block;
+}
+
+.pre-right {
+    float: right;
+}
+
+.navbar-custom {
+    background-color: black;
+    color: white;
+    border: none;
+    padding:25px;
+    margin: 0;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav li a {
+    color: white;
+}
+
+.navbar-custom .navbar-nav li a:hover {
+    color: #45b39e;
+}
+
+.navbar-custom .navbar-toggle:hover {
+    background-color: #45b39e;
+    color: white;
+    border-color: #45b39e;
+}
+
+.navbar-header {
+    padding-top: 5px;
+}
+
+.sidenav {
+    height: 700px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: #45b39e;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    color: #45b39e;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.slide img {
+    position: absolute;
+    top: 450px;
+    right: 0;
+    left: 0;
+
+}
+
+@media screen and (max-width: 900px) {
+    .slide img {
+        top: 300px;
+    }
+}
+
+
+.books p {
+    color: #45b39e;
+    font-size: 24px;
+}
+
+.books a {
+    color: black;
+    font-size: 24px;
+}
+
+.to_library {
+    margin: 0;
+    color: black;
+}
+
+h3 {
+    padding: 50px 0 0 0;
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #45b39e;
+    padding: 10px 0 20px 0;
+}
+
+.to_library p {
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.case img {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.ask, .join, .innovation {
+    margin-top: 60px;
+    padding: 0 40px 0;
+}
+
+.ebook, .magazine, .kids {
+    margin-top: 50px;
+    padding: 0 40px 0;
+}
+
+#map {
+    padding-top: 60px;
+}
+
+.touch ul {
+    line-height: 45px;
+    list-style: none;
+    padding: 0;
+}
+
+.touch, .contact {
+    padding-top: 60px;
+}
+
+.touch i {
+    font-size: 24px;
+    padding-right: 30px;
+}
+
+.showcase img {
+    width: 100%;
+}
+
+form {
+    padding-top: 60px;
+}
+
+.read {
+    border: 1px solid #45b39e;
+    color: #45b39e;
+    background-color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 80px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.read:hover {
+    background-color: #45b39e;
+    color: white;
+}
+
+
+.save {
+    margin: 60px 0;
+}
+
+.about_us p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.add_member i {
+    text-align: center;
+    font-size: 24px;
+}
+
+.most {
+    padding-top: 50px;
+}
+
+.most img {
+    width: 70%;
+}
+
+.contact form {
+    padding-top: 10px;
+}
+
+.pre_footer {
+    margin-top: 80px;
+    background-color: #4a4a4a;
+}
+
+.pre_footer h4 {
+    padding: 40px 0;
+}
+
+.pre_footer p {
+    color: white;
+    padding: 0 20px 0 0;
+    text-align: justify;
+}
+
+.pre_footer ul {
+    color: white;
+    list-style: none;
+    line-height: 30px;
+    padding: 0;
+}
+
+.letter {
+    background-color: #45b39e;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.news input {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 10px 30px 10px 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding:10px 0;
+}

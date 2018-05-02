@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<% if(val!=null){%>
+
+<% if(val=="admin") {%>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/Sign_up">Students for Approval</a>
+    <a href="/register">All Students Registered</a>
+    <a href="/book_action">All Books in Library</a>
+    <a href="/add_book">Add Books</a>
+    <a href="/issue_book">Issue / Return Books</a>
+    <a href="/history">Book History</a>
+    <a href="/logout">Logout</a>
+
+</div>
+<% } else {%>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/profile">My Profile</a>
+    <a href="/all_book">All Books in Library</a>
+    <a href="/available">Available Books</a>
+    <a href="/member_history">View History</a>
+    <a href="/logout">Logout</a>
+</div>
+<% } %>
+<!--end sidenav-->
+
+<div id="pre_header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <ul>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                    <li>www.publiclibrary.com</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i></li>
+                    <li>0471-2345-754</li>
+                </ul>
+                <ul class="pre-right">
+                    <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                    <li>Hi ,<%= val %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--END PRE_HEADER-->
+
+<nav class="navbar navbar-inverse navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="img-responsive" src="/images/logo.png"
+                                                  alt="public library"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about_us">About Us</a></li>
+                <li><a href="/library_books">Books</a></li>
+                <li><a href="/contact_us">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<% }  else { %>
+
+<div id="pre_header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <ul>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                    <li>www.publiclibrary.com</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i></li>
+                    <li>0471-2345-754</li>
+                </ul>
+                <ul class="pre-right">
+
+                    <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                    <li><a href="/login">Login</a></li>
+                    <!--<li><i class="fa fa-sign-in" aria-hidden="true"></i></li>
+                    <li><a href="/sign_up">Sign In</a></li>-->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--END PRE_HEADER-->
+
+<nav class="navbar navbar-inverse navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="img-responsive" src="/images/logo.png"
+                                                  alt="public library"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about_us">About Us</a></li>
+                <li><a href="/library_books">Books</a></li>
+                <li><a href="/contact_us">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<% } %>
+
+<!--END HEADER-->
+
+<div id="slider">
+    <img class="img-responsive" style="height:300px;width:100%;opacity:0.4;" src="/images/picture2.jpg">
+</div>
+
+<!--end slider-->
+
+<div class="about_us">
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center">About Us</h3>
+            <img class="img-responsive center-block" src="/images/line2.png">
+        </div>
+        <div class="row">
+            <p style="padding-top: 40px;">A Public library is organized for use and maintained by a public body, an
+                institution, a corporation, or
+                a private individual. Public and institutional collections and services may be intended for use by
+                people
+                who choose not toor cannot afford topurchase an extensive collection themselves, who need material no
+                individual can reasonably be expected to have, or who require professional assistance with their
+                research. In addition to providing materials, libraries also provide the services of librarians who are
+                experts at finding and organizing information and at interpreting information needs. Libraries often
+                provide quiet areas for studying, and they also often offer common areas to facilitate group study and
+                collaboration. Libraries often provide public facilities for access to their electronic resources and
+                the Internet. Modern libraries are increasingly being redefined as places to get unrestricted access to
+                information in many formats and from many sources. </p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 ask">
+                <div class="row">
+                    <img class="center-block img-responsive" src="/images/ask.png">
+                    <h4 class="text-center">Ask Librarian</h4>
+
+                    <P>library management and automation solution that enables information providers, information
+                        managers, resource incharge, resource managers & librarians to manage & disseminate information
+                        available in various kind of resources</P>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 innovation">
+                <div class="row">
+                    <img class="center-block img-responsive" src="/images/lightbulb.png">
+                    <h4 class="text-center">Innovation</h4>
+
+                    <p>user-experience design and specifically Don Normans ideas about behavioral, cognitive, and
+                        reflective responses of consumers to products as a pathway for libraries to innovate through
+                        spatial design and behavioral practices. After a brief introduction to experience design, this
+                        study connects Normans design levels to emerging trends and innovations in library spaces.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 join" style="padding-top: 20px;">
+                <div class="row">
+                    <img class="center-block img-responsive" src="/images/pencil.png">
+                    <h4 class="text-center">Join the Library</h4>
+
+                    <p>The Public Library is free and open to anyone interested in the Books .Youll need Library
+                        membership if you want to request material from the Library stores or use any of our online
+                        services. If you want to use the Library for personal study, you can just sign in as a day
+                        visitor.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--end about_us-->
+
+<div class="pre_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 about">
+                <h4>About Us</h4>
+
+                <p>A public library is organized for use and maintained by a public body, an institution, a
+                    corporation,
+                    or a private individual. Public and institutional collections and services may be intended for
+                    use
+                    by people who choose not to—or cannot afford to—purchase an extensive.</p>
+            </div>
+            <div class="col-md-4 col-sm-4 information">
+                <h4>Information</h4>
+                <ul>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Specials</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>New Products</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Best Sellers</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Contact Us</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Terms of Use</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Sitemap</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 news">
+                <div class="row">
+                    <h4>Newsletter</h4>
+                    <input type="text" name="news" placeholder="Email">
+                </div>
+                <div class="row">
+                    <div class="btn letter">Submit</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!--end pre_footer-->
+
+<footer>
+    <p>Copyrights © 2015-16 PublicLibrary All rights reserved</p>
+</footer>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+
+</body>
+</html>
